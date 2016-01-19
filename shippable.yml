@@ -13,6 +13,9 @@ script:
 after_script:
   - mkdir -p shippable/codecoverage
   - mv target/scala-2.11/coverage-report/cobertura.xml $PWD/shippable/codecoverage/
+notifications:
+ email:
+  - revathi@shippable.com
   
   
   
